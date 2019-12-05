@@ -17,6 +17,9 @@ var tile = SKSpriteNode()
     
     override func didMove(to view: SKView)
     {
+//        let borderBody = SKPhysicsBody(edgeFrom: CGPoint -300, to: CGPoint 300)
+//        borderBody.friction = 0
+//        physicsBody = borderBody
         physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         let background = SKSpriteNode(imageNamed: "background")
         backgorund.physicsBody?.affectedByGravity = false
